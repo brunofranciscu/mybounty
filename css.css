@@ -87,7 +87,7 @@ h1, h3, p, input{
     font-family: source sans pro;
     letter-spacing: 13px;
     position: relative;
-    top: -9pc;
+    top: -1.2pc;
     text-align: right;
     left: -4pc;
     font-weight: 400;
@@ -107,14 +107,15 @@ h1, h3, p, input{
 }
 #urName{
   left: 50%;
-  top: -8pc;
+  top:50pc;
   transform: translateX(-50%);
     width: 80%;
     border: 0;
-    background:transparent ;
-    font-size: 110px;
+    background:#fff0;
+    font-size: 90px;
     font-weight: bold;
-    text-align: center
+    text-align: center;
+    position: absolute;
 }
 #letters p{
     width: 55%;
@@ -123,7 +124,7 @@ h1, h3, p, input{
     font-family: source sans pro;
     font-weight: 400;
     position:relative;
-    top: -8pc;
+    top: 0pc;
     font-size: 15px
  }
 
@@ -131,9 +132,9 @@ h1, h3, p, input{
     font-size: 70px !important;
     letter-spacing: 0 !important;
     position: absolute !important;
-    top: -7pc !important;
+    top: 1.5pc !important;
     text-align: right !important;
-    right: 5pc;
+    right: 4pc;
 }
 
 footer p{
@@ -156,7 +157,7 @@ input{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -35pc;
+    top: -25pc;
     padding: 20px;
     margin-left: 1pc;
     margin-right: 1pc;
