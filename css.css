@@ -1,0 +1,237 @@
+@media print {
+    #main{
+        -webkit-print-color-adjust: exact; 
+    }
+    #download, footer{
+        display: none;
+        visibility: hidden;
+        opacity: 0
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, p, input{
+    color: #573b2e;
+}
+
+#main{
+    width: 920px;
+    height:1150px;
+    margin: auto;
+    background-image:url('bg.png');
+    background-repeat:no-repeat;
+    background-size:100% 1150px;
+    background-blend-mode: darken;
+    border-radius: 50px;
+    position: relative;
+    top: 1pc
+}
+
+#main h1{
+    text-align: center;
+    font-size: 180px;
+    margin-top: 10px;
+}
+
+#foto{
+    height: 500px;
+    width:700px;
+    max-width: 700px !important;
+    margin: auto;
+    position: relative;
+    top: -9pc;
+    z-index: 0;
+    background-size: 110% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    overflow: hidden;
+    
+}
+#foto center{
+    display: ;
+}
+/*#foto img{
+    width: 100%;
+    border:3px solid #573b2e;
+    cursor: pointer;
+}*/
+#value h3:first-of-type{
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 23px;
+    margin:0;
+    position:relative;
+    top:-7.5pc
+}
+#value input{
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    width: 100%;
+}
+#value input[type=text]{
+    font-size: 130px;
+    position: relative;
+    top: -9pc;
+    font-family: Times New Roman MT;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -10px;
+}
+#value input[type=tel]{
+    font-size: 90px;
+    font-family: source sans pro;
+    letter-spacing: 18px;
+    position: relative;
+    top: -9pc;
+    text-align: right;
+    left: -3pc;
+    font-weight: 100;
+    padding: 0;
+}
+
+#letters{
+    position:relative;
+    top:-9pc;
+    padding:20px;
+}
+#value #b{
+    position: absolute;
+    top: 57.5pc;
+    width: 8%;
+    margin-left: 5pc;
+}
+#letters p{
+    width: 55%;
+    display: inline-block;
+    margin-left:3pc;
+    font-family: source sans pro;
+    font-weight: 400;
+    position:relative;
+    top: -1.8pc;
+    font-size: 15px
+ }
+
+#letters h3{
+    font-size: 70px !important;
+    letter-spacing: 0 !important;
+    position: absolute !important;
+    top: 0pc !important;
+    text-align: right !important;
+    right: 5pc;
+}
+
+footer p{
+    text-align: center;
+    font-family: source sans pro;
+    height: 100px
+}
+
+#upload{
+   position: relative;
+    z-index: 1;
+   opacity: 0;
+}
+
+input{
+    position: relative;
+    z-index: 1;
+}
+#imgs{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -35pc;
+    padding: 20px;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    z-index: 0;
+    margin-bottom: -18pc
+}
+#imgs img{
+    width: 3%;
+    height:250px;
+}
+
+#download{
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    background-color:  #573b2e;
+    color: white;
+    font-family: source sans pro;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-weight: 100;
+    z-index: 999999999999999999 !important;
+    cursor: pointer;
+    position: relative;
+}
+
+
+@media screen and (max-width:415px){
+    #main{
+        width: 98%;
+        border-radius:10px;
+        height: 530px
+    }
+    #main h1{
+        font-size: 65px;
+    }
+    #foto img{
+       height: 250px;
+        width:320px;
+        left: -1pc;
+        position: relative;
+    }
+    #foto{
+        top: -3pc
+    }
+    #value h3:first-of-type{
+        font-size: 29px !important;
+        letter-spacing: 5px !important;
+        top: -17.8pc
+    }
+    #value input[type=text]{
+        font-size: 60px;
+        top: -19.5pc;
+        left: -0.2pc;
+    }
+    #value input[type=tel]{
+        font-size: 45px;
+        letter-spacing: 0;
+        left: -2.8pc;
+        top: -20.9pc;
+    }
+    #value #b{
+        top: 26.4pc;
+        left: -2pc;
+    }
+    #value #letters p{
+        top: -13.5pc;
+        font-size: 7px;
+        width: 220px;
+        left:-2.5pc
+    }
+    #value #letters h3{
+        top: -11.3pc !important;
+        letter-spacing: -1px !important;
+        font-size: 20px !important;
+        left: 15pc !important;
+    }
+    #imgs{
+       width: 94%;
+        left: -1.5pc;
+    }
+    #imgs img{
+        height: 150px
+    }
+    #download{
+        width: 95%
+    }
+}

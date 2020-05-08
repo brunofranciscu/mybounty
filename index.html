@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" href="favi.png" type="image/png" >
+<title>My Bounty | WANTED POSTER MAKER</title>
+
+<link href="css.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Make your own One Piece Wanted Poster. Give your own values, It's simple and fast!">
+  <link rel="canonical" href="http://brunofrancisco.com.br/wantedposter">
+  <meta name="author" content="Bruno Francisco">
+  <meta name="robots" content="index">
+  <style type="text/css" media="print" >
+    .nonPrintable{display:none;}
+  </style>
+  <meta property="og:title" content="ONE PIECE | WANTED POSTER MAKER">
+  <meta property="og:description" content="Make your own One Piece Wanted Poster. Give your own values, It's simple and fast!"/>
+  <meta property="og:url" content="http://brunofrancisco.com.br/wantedposter">
+  <meta property="og:site_name" content="Bruno Francisco"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://brunofrancisco.com.br/wantedposter/wanted.jpg">
+  <script src="jquery.js"></script>
+  <script>
+
+
+ $('document').ready(function(){
+
+    $('.foto').on('click', function(){
+	  $('#upload').click()
+      });
+
+   
+})
+
+
+ $('#download').click(function(){
+  window.print()
+  })
+
+
+  	$(function () {
+    	$("#upload").change(function () {
+        					if (this.files && this.files[0]) {
+            				var reader = new FileReader();
+            				reader.onload = imageIsLoaded;
+            				reader.readAsDataURL(this.files[0]);
+						        }});});
+
+			function imageIsLoaded(e) {
+					    $('#foto').css('background','url('+e.target.result+')');
+              $('.foto').remove()
+            };
+
+					    
+					  
+  </script>
+  </head>
+<body>
+<div id="main">
+	<h1>WANTED</h1>
+	<div id="foto">
+		<img class="foto" src="upload.png">
+		<center><input type="file" id="upload" value="Upload Image"></center>
+		</div>
+	<div id="value">
+		<h3>DEAD OR ALIVE</h3><br>
+		<input type="text" value="" placeholder="Your Name">
+		<img id="b" src="b.png" alt="">
+		<input type="tel" value="" placeholder="500,000,000-"><br>
+		<div id="letters">
+			<p>KONO SAKUHIN HA FICTION DETHUNODE　JITSUZAISURU JINBUTSU DANTAI SONOTA NO SOSHIKI TO DOITSU NO MEISHOU GA GEKICHU NI TOUJYOU　 SHITATOSHITEMO JITSUZAI NA MONOTOHA ISSAI MUKANKEIDETH. </p>
+			<h3>MARINE</h3>
+		</div>
+	</div>
+	<div id="imgs">
+	<img id="o1" src="orna.png" alt=""><img id="o2" src="orna2.png" alt=""></div>
+</div>
+<center><button id="download" onclick="window.print()">DOWNLOAD</button></center>
+<footer><p>&copy Bruno Francisco 2019</p></footer>
+</body>
+</html>
