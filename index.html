@@ -30,15 +30,14 @@
     $('.foto').on('click', function(){
 	  $('#upload').click()
       });
-
-   var row = $('textarea').attr('rows');
+})
+$(document).keydown(function(e){
+		var row = $('textarea').attr('rows');
 		var rows = ++row
     if (e.which == 32) { 
-       $('#urName').attr('rows',rows).val($('textarea').val() +'\n').css('background','#eee')
+       $('#message').attr('rows',rows).val($('textarea').val() +'\n').css('background','#eee')
     	}
 	});
-})
-
 
  $('#download').click(function(){
   window.print()
