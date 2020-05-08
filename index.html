@@ -35,7 +35,7 @@ $('#urName').keydown(function(e){
 		var row = $('textarea').attr('rows');
 		var rows = ++row
     if (e.which == 32) { 
-       $('#urName').attr('rows',rows).val($('textarea').val() +'\n')
+       $('#urName').attr('rows',rows).val($('textarea').val() +'\n').trim()
     	}
 	});
 
