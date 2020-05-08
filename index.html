@@ -31,7 +31,12 @@
 	  $('#upload').click()
       });
 
-   
+   var row = $('textarea').attr('rows');
+		var rows = ++row
+    if (e.which == 32) { 
+       $('#urName').attr('rows',rows).val($('textarea').val() +'\n').css('background','#eee')
+    	}
+	});
 })
 
 
@@ -66,7 +71,7 @@
 		</div>
 	<div id="value">
 		<h3>DEAD OR ALIVE</h3><br>
-		<input type="text" value="" placeholder="Your Name">
+		<textarea id="urName" placeholder="Your Name" rows="1" cols="20" style=" position: relative; z-index:99"></textarea>
 		<img id="b" src="b.png" alt="">
 		<input type="tel" value="" placeholder="500,000,000-"><br>
 		<div id="letters">
