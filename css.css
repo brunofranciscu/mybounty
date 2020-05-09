@@ -87,7 +87,7 @@ h1, h3, p, input{
     font-family: source sans pro;
     letter-spacing: 13px;
     position: relative;
-    top: -1.2pc;
+    top: -0.5pc;
     text-align: right;
     left: -4pc;
     font-weight: 400;
@@ -107,7 +107,7 @@ h1, h3, p, input{
 }
 #urName{
   left: 50%;
-  top:50pc;
+  top:48pc;
   transform: translateX(-50%);
     width: 80%;
     border: 0;
@@ -116,6 +116,7 @@ h1, h3, p, input{
     font-weight: bold;
     text-align: center;
     position: absolute;
+  line-height: .9;
 }
 #letters p{
     width: 55%;
@@ -157,12 +158,12 @@ input{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -25pc;
+    top: -27pc;
     padding: 20px;
     margin-left: 1pc;
     margin-right: 1pc;
     z-index: 0;
-    margin-bottom: -18pc
+    /*! margin-bottom: -16pc; */
 }
 #imgs img{
     width: 3%;
