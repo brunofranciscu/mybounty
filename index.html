@@ -26,6 +26,12 @@
 
 
  $('document').ready(function(){
+
+ $('#bounty').on('change',function(){
+  $('#bounty').val($('#bounty').val()+'-');
+ })
+
+  
   $('#urName').find(' ').remove();
 $('#urName').keydown(function(e){
     if (e.which == 32) { 
@@ -81,7 +87,7 @@ $('#urName').keydown(function(e){
     <textarea id="surName" rows="1" cols="20" style="z-index:99"></textarea>
     <br>
 		<img id="b" src="b.png" alt="">
-		<input type="tel" value="" placeholder="500,000,000-"><br>
+		<input type="tel" id="bounty" value="" placeholder="500,000,000-"><br>
 		<div id="letters">
 			<p>KONO SAKUHIN HA FICTION DETHUNODE　JITSUZAISURU JINBUTSU DANTAI SONOTA NO SOSHIKI TO DOITSU NO MEISHOU GA GEKICHU NI TOUJYOU　 SHITATOSHITEMO JITSUZAI NA MONOTOHA ISSAI MUKANKEIDETH. </p>
 			<h3>MARINE</h3>
