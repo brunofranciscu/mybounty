@@ -26,15 +26,19 @@
 
 
  $('document').ready(function(){
-
+  $('#urName').find(' ').remove();
 $('#urName').keydown(function(e){
-		var row = $('textarea').attr('rows');
-		var rows = ++row
     if (e.which == 32) { 
-       $('#urName').attr('rows',rows).val($('textarea').val() +'\n').trim()
+       $('#surName').focus();
     	}
-	});	 
-	 
+	});	
+  
+	 $('#surName').keydown(function(e){
+    var dot = '.' 
+    if (e.which == 32) { 
+       $('#surName').val($('#surName').val()+dot);
+      }
+  }); 
 	 
     $('.foto').on('click', function(){
 	  $('#upload').click()
@@ -56,7 +60,7 @@ $('#urName').keydown(function(e){
 						        }});});
 
 			function imageIsLoaded(e) {
-					    $('#foto').css('background','url('+e.target.result+')');
+					    $('#foto').css('background','url('+e.target.result+')').css('border','3px solid #573b2e');
               $('.foto').remove()
             };
 
@@ -73,7 +77,9 @@ $('#urName').keydown(function(e){
 		</div>
 	<div id="value">
 		<h3>DEAD OR ALIVE</h3><br>
-		<textarea id="urName" placeholder="Your Name" rows="1" cols="20" style=" position: relative; z-index:99"></textarea><br>
+		<textarea id="urName" placeholder="Your Name" rows="1" cols="20" style="z-index:99"></textarea>
+    <textarea id="surName" rows="1" cols="20" style="z-index:99"></textarea>
+    <br>
 		<img id="b" src="b.png" alt="">
 		<input type="tel" value="" placeholder="500,000,000-"><br>
 		<div id="letters">
