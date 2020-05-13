@@ -54,14 +54,10 @@ textarea{
     overflow: hidden;
     cursor:pointer;
 }
-#foto center{
-    display: ;
+#foto img{
+    transform: translateX(-10%)
 }
-/*#foto img{
-    width: 100%;
-    border:3px solid #573b2e;
-    cursor: pointer;
-}*/
+
 #value h3:first-of-type{
     text-align: center;
     font-size: 60px;
