@@ -97,6 +97,14 @@ $('#urName').keydown(function(e){
 	<img id="o1" src="orna.png" alt=""><img id="o2" src="orna2.png" alt=""></div>
 </div>
 <center><button id="download" onclick="window.print()">DOWNLOAD</button></center>
-<footer><p>&copy Bruno Francisco 2020</p></footer>
+	<script>
+		//FOOTER YEAR
+var data = new Date();
+var ano = data.getDate();
+data.getFullYear();
+var output = data.getFullYear();
+document.querySelector('footer span').innerText = output
+	</script>
+	<footer><p>&copy Bruno Francisco <span></span></p></footer>
 </body>
 </html>
